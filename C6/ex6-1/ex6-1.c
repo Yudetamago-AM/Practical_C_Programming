@@ -19,7 +19,7 @@ double sqrt(double x) {
         } while (y < sqrt);/* yの減少が止まるまで繰り返す */
         return sqrt;
     } else if (x != 0) {
-        fprintf(stderr, "sqrt: x should be greater than zero");
+        fprintf(stderr, "err: sqrt: x should be greater than zero");
     }
 
     return 0;
