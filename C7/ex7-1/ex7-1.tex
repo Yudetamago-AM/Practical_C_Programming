@@ -1,0 +1,50 @@
+\documentclass[a4paper,11pt]{jsarticle}
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+% 余白設定
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+
+\begin{document}
+
+\title{ex7-1:ヤードポンド法→メートル法変換プログラム\\{\Large 予備仕様書}}
+\author{Yudetamago-AM}
+\date{2022/7/24}
+\maketitle
+
+\section*{概要}
+
+このプログラムは，しばしば人を困らせるヤードポンド法をメートル法に変換するプログラムです．
+このプログラムは，ヤードポンド法の単位のうち，以下のような主要な物をサポートします．
+また，同時にその単位の略称，単位量あたりのメートル法での単位量および単位を以下のように定めます．
+というのも，ヤードポンド法では，同じ単位でも国・地域や考え方によりそれが指す量が変わることがあるためです．
+
+\begin{table}[h]
+  \caption{単位}
+  \centering
+  \begin{tabular}{llll}
+    \hline
+    \multicolumn{2}{l}{ヤードポンド法} & \multicolumn{2}{l}{メートル法}\\
+    単位 & 略称 & 単位量 & 単位\\
+    \hline \hline
+    マイル & mi & 1.6093 & $ km $\\
+    ヤード & yd & 91.440 & $ cm $\\
+    フィート & ft & 30.48 & $ cm $\\
+    インチ & in & 2.5400 & $ cm $\\
+    エーカー & ac & 4046.9 & $ m^2 $\\
+    バレル & bbl & 159.00 & $ L $\\
+    ガロン & gal & 3.7854 & $ L $\\
+    ポンド & lb & 453.59237 & $ g $\\
+    オンス & oz & 28.350 & $ g $\\
+    \hline
+  \end{tabular}
+\end{table}
+
+
+
+
+
+\end{document}
